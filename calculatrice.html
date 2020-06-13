@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculatrice.css">
+    <title>CALCULATRICE</title>
+</head>
+<body>
+    <div class="content">
+        <form name="calculatrice">
+            <input type="number" name="textview" class="textview" ><br>
+        </form>
+        
+        
+            <table>
+                <tr>
+                    <td><input type="button" class="bouton net operation" value="√" ></td>
+                    <td><input type="button" class="bouton net operation" value="^2" ></td>
+                    <td><input type="button" class="bouton net operation Del" value="←" onclick="back()"></td>
+                    <td><input type="button" class="bouton encore operation" value="÷" onclick="insertOp('/')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="bouton net nombre" value="7" onclick="insertNom(7)"></td>
+                    <td><input type="button" class="bouton net nombre" value="8" onclick="insertNom(8)"></td>
+                    <td><input type="button" class="bouton net nombre" value="9" onclick="insertNom(9)"></td>
+                    <td><input type="button" class="bouton encore operation" value="x" onclick="insertOp('*')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="bouton net nombre" value="4" onclick="insertNom(4)"></td>
+                    <td><input type="button" class="bouton net nombre" value="5" onclick="insertNom(5)"></td>
+                    <td><input type="button" class="bouton net nombre" value="6" onclick="insertNom(6)"></td>
+                    <td><input type="button" class="bouton encore operation" value="-" onclick="insertOp('-')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="bouton net nombre" value="1" onclick="insertNom(1)"></td>
+                    <td><input type="button" class="bouton net nombre" value="2" onclick="insertNom(2)"></td>
+                    <td><input type="button" class="bouton net nombre" value="3" onclick="insertNom(3)"></td>
+                    <td><input type="button" class="bouton encore operation" value="+" onclick="insertOp('+')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="bouton encore operation Del" value="AC" onclick="clean()"></td>
+                    <td><input type="button" class="bouton net nombre" value="0" onclick="insertNom(0)"></td>
+                    <td><input type="button" class="bouton net operation" value="." onclick="insertDec()"></td>
+                    <td><input type="button" class="bouton equal" value="=" onclick="insertequalTo()"></td>
+                </tr>
+            </table>
+    
+    </div>
+    <script type="text/javascript" src="calculatrice.js"></script>
+</body>
+</html>
